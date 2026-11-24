@@ -9,7 +9,10 @@
 - Duration of a booking cant exceed 6 hours.
 - Users can cancel their booking before or during the booking duration.
 
-## Next versions
+## Booking rules
 
-- Booking limits for Users.
-- Booking time buffers.
+- The end time must be after the start time.
+- Bookings cannot start in the past.
+- A booking may start exactly when another booking ends.
+- Only the user who created a booking can cancel it.
+- Canceling a booking immediately releases the room for the remaining time.
