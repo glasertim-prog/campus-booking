@@ -16,3 +16,4 @@
 - A booking may start exactly when another booking ends.
 - Only the user who created a booking can cancel it.
 - Canceling a booking immediately releases the room for the remaining time.
+- Cancelled bookings remain visible in the user's booking history and no longer block room availability.
