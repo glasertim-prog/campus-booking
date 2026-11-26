@@ -17,19 +17,19 @@ public class Room {
         return RoomNr;
     }
 
-    public void setRoomNr(String NewRoomNr) throws IllegalArgumentException{
-        if(NewRoomNr == null|| NewRoomNr.isBlank()) {
-            throw new IllegalArgumentException("RoomNr cant be empty");
-        }
-        RoomNr = NewRoomNr;
-    }
-
     public int getRoom_id() {
         return Room_id;
     }
 
     public int getCapacity() {
         return Capacity;
+    }
+
+    public void setRoomNr(String NewRoomNr) throws IllegalArgumentException{
+        if(NewRoomNr == null|| NewRoomNr.isBlank()) {
+            throw new IllegalArgumentException("RoomNr cant be empty");
+        }
+        RoomNr = NewRoomNr;
     }
 
     public void setCapacity(int NewCapacity) throws IllegalArgumentException{
