@@ -27,4 +27,11 @@ public class BookingPeriod {
         return EndTime;
     }
 
+    public boolean overlaps(BookingPeriod Other) {
+        if(Other == null) {
+            throw new IllegalArgumentException("Other period must not be null");
+        }
+        return (this.getStartTime().isBefore(Other.getEndTime()) && this.getEndTime().isAfter(Other.getStartTime()));
+    }
+
 }
