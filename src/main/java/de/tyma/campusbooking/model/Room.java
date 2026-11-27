@@ -8,8 +8,8 @@ public class Room {
 
     public Room(String RoomNr, int Room_id, int Capacity) {
         setRoomNr(RoomNr);
-        setCapacity(Capacity);
         this.Room_id = Room_id;
+        setCapacity(Capacity);
 
     }
 
